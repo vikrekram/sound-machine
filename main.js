@@ -1,6 +1,6 @@
 const electron = require('electron');
 // Модуль контроля жизненного цикла приложения
-const {app} = electorn;
+const {app} = electron;
 // Модуль создания нативного окна браузера
 const {BrowserWindow} = electron;
 
@@ -14,7 +14,7 @@ function createWindow() {
   win.loadURL(`file://${__dirname}/index.html`);
 
   // Открываем DevTools
-  win.webContents.openDevTools();
+  //win.webContents.openDevTools();
 
   // Сообщаем когда окно закрыто
   win.on('closed', () => {
